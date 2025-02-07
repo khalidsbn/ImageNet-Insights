@@ -10,8 +10,7 @@ The paper introduces ImageNet, a large-scale image database built upon the hiera
 5. [Future Directions (as of 2009)](#future-directions-as-of-2009)
 6. [Using ImageNet with PyTorch](#using-imagenet-with-pytorch)
 7. [How the Research Sector Benefits from ImageNet](#how-the-research-sector-benefits-from-imagenet)
-8. [Example of ImageNet's Impact on Research](#example-of-imagenets-impact-on-research)
-9. 
+8. [Example of ImageNet's Impact on Research](#example-of-imagenets-impact-on-research) 
 
 ## 1. Scale & Structure
 

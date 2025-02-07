@@ -2,6 +2,17 @@
 
 The paper introduces ImageNet, a large-scale image database built upon the hierarchical structure of WordNet. ImageNet aims to populate the majority of WordNet’s 80,000 synsets with 500–1000 high-quality, full-resolution images per synset, creating a dataset with tens of millions of annotated images organized semantically.
 
+# Table of Contents
+1. [Scale & Structure](#scale--structure)
+2. [Data Collection Process](#data-collection-process)
+3. [Comparison to Other Datasets](#comparison-to-other-datasets)
+4. [Applications of ImageNet](#applications-of-imagenet)
+5. [Future Directions (as of 2009)](#future-directions-as-of-2009)
+6. [Using ImageNet with PyTorch](#using-imagenet-with-pytorch)
+7. [How the Research Sector Benefits from ImageNet](#how-the-research-sector-benefits-from-imagenet)
+8. [Example of ImageNet's Impact on Research](#example-of-imagenets-impact-on-research)
+9. 
+
 ## 1. Scale & Structure
 
 ### ImageNet’s Hierarchical Design:

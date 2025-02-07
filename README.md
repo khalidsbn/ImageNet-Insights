@@ -100,4 +100,38 @@ Achieved **~99.7% labeling accuracy**, especially impressive given the dataset�
 
 ---
 
-This README provides a detailed breakdown of ImageNet’s significance, methodology, and impact. Let me know if you’d like any modifications or additions!
+## 6. Using ImageNet with PyTorch
+
+Here's a basic example of how to use ImageNet data with PyTorch for image classification:
+
+```python
+import torch
+import torchvision.transforms as transforms
+import torchvision.datasets as datasets
+from torch.utils.data import DataLoader
+
+# Define transformations for the dataset
+transform = transforms.Compose([
+    transforms.Resize(256),
+    transforms.CenterCrop(224),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+])
+
+# Load the ImageNet dataset (assuming it's downloaded)
+dataset = datasets.ImageNet(root='./data', split='train', transform=transform)
+dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+
+# Example: Loop through the dataset
+for images, labels in dataloader:
+    print(f'Batch of images shape: {images.shape}')
+    print(f'Batch of labels shape: {labels.shape}')
+    break  # Display the first batch only
+```
+
+### Notes:
+- Replace `'./data'` with the actual path to your ImageNet dataset.
+- Ensure you have the **ImageNet dataset** downloaded and properly organized.
+- Adjust transformations, batch sizes, and other parameters as needed for your project.
+
+This simple example shows how to preprocess, load, and iterate over ImageNet data using PyTorch.
